@@ -1,3 +1,4 @@
+import { defaultTheme } from 'react-admin';
 import { CRM } from './root/CRM';
 
 /**
@@ -25,6 +26,18 @@ import { CRM } from './root/CRM';
  *    />
  * );
  */
-const App = () => <CRM />;
+const App = () => (
+    <CRM
+        title="Elao CRM"
+        lightTheme={{
+            ...defaultTheme,
+            palette: {
+                primary: {
+                    main: '#ff4345',
+                },
+            },
+        }}
+    />
+);
 
 export default App;

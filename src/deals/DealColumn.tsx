@@ -45,7 +45,7 @@ export const DealColumn = ({
                     {totalAmount.toLocaleString('en-US', {
                         notation: 'compact',
                         style: 'currency',
-                        currency: 'USD',
+                        currency: 'EUR',
                         currencyDisplay: 'narrowSymbol',
                         minimumSignificantDigits: 3,
                     })}
